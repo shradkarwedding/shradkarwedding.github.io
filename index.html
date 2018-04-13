@@ -143,11 +143,11 @@
 	<!--</header>-->
 
 
-	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+	<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/shradkar.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
+				<div class="col-md-6.5 col-md-offset-0.1 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Shradda &amp; Karthik</h1>
@@ -447,10 +447,12 @@
 		Honeymoon Registry!!
 		<br/>
 		<br/>
-		<!--<select name="os0"> -->
-
+		
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="EVV4EK3GZP32L">
+<table>
 <tr><td><input type="hidden" name="on0" value="FOR A HONEYMOON LIST"></td></tr><tr><td><input type="number" name="os0" maxlength="4"></td></tr>
-
+</table>
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
@@ -542,84 +544,71 @@
 </form>
 
 
+<!--map -->
 
 
-<!--
+<h4 class="page-title" contenteditable="true" id="locationTitle"><p> Venue</p></h4>
 
-    <form autocomplete="on" action="mailto:shradkar0705@gmail.com" method="POST" onsubmit="
-      return (function(form) {
-        Y.use('squarespace-form-submit', 'node', function(Y){
-          (new Y.Squarespace.FormSubmit({
-            formNode: Y.Node(form)
-          })).submit('5698222bfb36b1d867940ebe', '5698222bfb36b1d867940ebc', 'page-5698222bfb36b1d867940ebc');
-        });
-        return false;
-      })(this)" data-form-id="5698222bfb36b1d867940ebe">
-
-        <div class="field-list clear">
-
-              <div id="email-yui_3_17_2_1_1406853546604_459418" class="form-item field email required">
-                <label class="title" for="email-yui_3_17_2_1_1406853546604_459418-field">Email <span class="required">*</span></label>
-                
-                <input class="field-element" name="email" x-autocompletetype="email" type="text" spellcheck="false" id="email-yui_3_17_2_1_1406853546604_459418-field" />
-              </div>
-            
-
-
-  <fieldset id="name-yui_3_17_2_1_1406849047267_54955" class="form-item fields name required">
-              <div class="title">Name <span class="required">*</span></div>
-              <legend>Name</legend>
-              
-                <div class="field first-name">
-                  <label class="caption"><input class="field-element field-control" name="fname"
-                  x-autocompletetype="given-name" type="text"
-                  spellcheck="false"
-                  maxlength="30"
-                  data-title="First" />
-                  First Name</label>
-                </div>
-                <div class="field last-name">
-                  <label class="caption"><input class="field-element field-control" name="lname"
-                  x-autocompletetype="surname" type="text"
-                  spellcheck="false" maxlength="30" data-title="Last" />
-                  Last Name</label>
-                </div>
-              </fieldset>
-            
-              <div id="text-yui_3_17_2_1_1406849047267_55686" class="form-item field text required">
-                <label class="title" for="text-yui_3_17_2_1_1406849047267_55686-field">Are you attending? <span class="required">*</span></label>
-                
-                <input class="field-element text" type="text" id="text-yui_3_17_2_1_1406849047267_55686-field" />
-              </div>
-
-            
-              <div id="text-yui_3_17_2_1_1406849047267_58959" class="form-item field text">
-                <label class="title" for="text-yui_3_17_2_1_1406849047267_58959-field">Is anyone else coming with you?</label>
-                
-                <input class="field-element text" type="text" id="text-yui_3_17_2_1_1406849047267_58959-field" />
-              </div> 
-
-        </div> -->
-    <!--
-      <div class="form-button-wrapper form-button-wrapperalign-center">
-        <input class="button sqs-system-button sqs-editable-button" type="submit" value="Submit"/>
-      </div>
-      
-
-      <div class="hidden form-submission-text">Thank you!</div>
-
-      <div class="hidden form-submission-html" data-submission-html=""></div>
-    </form>
-
-  </div>
-
-</div>
-</div></div></div></div></div> -->
-
-<!-- test new rsvp-->  
+<section class="venue first">
+	<div class="map-clip"></div>
+	<div class="venue-and-address">Dwaraka Palace, 63, 1st Seaward Rd, Valmiki Nagar, Thiruvalluvar Nagar, Thiruvanmiyur, Chennai, Tamil Nadu 600041, India</div>
+	<section class="location">
+		<h3 contenteditable="true" id="locationCeremonyText" class="title usertext-nooptions"><p>Ceremony</p></h3>	
+	    <h5 class="venue-name">Dwaraka Palace</h5>
+	    <div class="clear"></div>
+    </section>
+    <section class="map">
+    	<div id="ceremony-map" style="width:100%;height:280px;"></div>
+    </section>
 
 
 
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOYmA6b9YMbOLS3VBXGGl86eTnd1Ui13I&sensor=false"> </script>
+<script type="text/javascript">
+	function useGeo(map,results,status){
+		if (status == google.maps.GeocoderStatus.OK) {
+		      map.setCenter(results[0].geometry.location);
+		      var marker = new google.maps.Marker({
+		          map: map,
+		          position: results[0].geometry.location
+		      });
+		    } else {
+		      
+		}
+	}
+	var ceremonyMap, receptionMap;
+  function initialize_ceremony() {
+  	var geocoder = new google.maps.Geocoder();
+  	var mapOptions = {
+      center: new google.maps.LatLng(-34.397, 150.644),
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("ceremony-map"), mapOptions);
+    ceremonyMap = map;
+  	geocoder.geocode( { 'address': '3, 1st Seaward Rd, Valmiki Nagar, Thiruvalluvar Nagar, Thiruvanmiyur, Chennai, Tamil Nadu 600041, India'}, function(results, status) {
+   		useGeo(map,results,status)
+	  });
+  }
+  function initialize_reception() {
+  	var geocoder = new google.maps.Geocoder();
+  	var mapOptions = {
+      center: new google.maps.LatLng(-34.397, 150.644),
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("reception-map"), mapOptions);
+    receptionMap = map;
+  	geocoder.geocode( { 'address': '3, 1st Seaward Rd, Valmiki Nagar, Thiruvalluvar Nagar, Thiruvanmiyur, Chennai, Tamil Nadu 600041, India'}, function(results, status) {
+   		useGeo(map,results,status)
+	  });
+  }
+  google.maps.event.addDomListener(window, 'load', initialize_ceremony);
+  google.maps.event.addDomListener(window, 'load', initialize_reception);
+</script>
+
+	
 
 
 
@@ -633,11 +622,7 @@
 						<small class="block">&copy; 2018 ShradKar. All Rights Reserved.</small> 
 						<small class="block">Designed by Karthik &amp; Shradda </small>
 					</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-						</ul>
-					</p>
+			
 				</div>
 			</div>
 
@@ -698,4 +683,6 @@
 	</body>
 </html>
 
->>>>>>> 4d0ae725e1aa661d427fcd2aa1e93cec7240074b
+
+
+
