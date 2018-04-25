@@ -581,26 +581,26 @@
   function initialize_ceremony() {
   	var geocoder = new google.maps.Geocoder();
   	var mapOptions = {
-      center: new google.maps.LatLng(-34.397, 150.644),
+      center: new google.maps.LatLng(12.982932,80.267728),
       zoom: 16,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     var map = new google.maps.Map(document.getElementById("ceremony-map"), mapOptions);
     ceremonyMap = map;
-  	geocoder.geocode( { 'address': '3, 1st Seaward Rd, Valmiki Nagar, Thiruvalluvar Nagar, Thiruvanmiyur, Chennai, Tamil Nadu 600041, India'}, function(results, status) {
+  	geocoder.geocode( { 'address': '63, 1st Seaward Rd, Valmiki Nagar, Thiruvalluvar Nagar, Thiruvanmiyur, Chennai, Tamil Nadu 600041, India'}, function(results, status) {
    		useGeo(map,results,status)
 	  });
   }
   function initialize_reception() {
   	var geocoder = new google.maps.Geocoder();
   	var mapOptions = {
-      center: new google.maps.LatLng(-34.397, 150.644),
-      zoom: 16,
+      center: new google.maps.LatLng(12.982932,80.267728),
+      zoom: 18,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     var map = new google.maps.Map(document.getElementById("reception-map"), mapOptions);
     receptionMap = map;
-  	geocoder.geocode( { 'address': '3, 1st Seaward Rd, Valmiki Nagar, Thiruvalluvar Nagar, Thiruvanmiyur, Chennai, Tamil Nadu 600041, India'}, function(results, status) {
+  	geocoder.geocode( { 'address': '63, 1st Seaward Rd, Valmiki Nagar, Thiruvalluvar Nagar, Thiruvanmiyur, Chennai, Tamil Nadu 600041, India'}, function(results, status) {
    		useGeo(map,results,status)
 	  });
   }
