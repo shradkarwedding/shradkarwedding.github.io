@@ -171,9 +171,7 @@
                 var img = $this.find(".slider-bg").attr("src");
 
                 $this.css({
-                    backgroundImage: "url("+ img +")",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center center"
+                    backgroundImage: "url("+ img +")"
                 })
             });
         }

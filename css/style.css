@@ -262,7 +262,7 @@ a:focus {
   line-height: 37px;
   font-size: 18px;
   font-size: 1rem;
-  color: #5e9a8e;
+  color: #A4313F;
   border: 1px solid #e6e6e6;
   outline: 0;
   padding: 0;
@@ -300,7 +300,7 @@ a:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #5e9a8e;
+  background-color: #A4313F;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
@@ -403,13 +403,18 @@ a:focus {
     left: -28px;
     top: -54px;
   }
+  .getting-there-section .section-title-white .vertical-line span i, 
+  .rsvp-section .section-title-white .vertical-line span i{
+    left: -34px;
+    top: -63px;
+  }
 }
 
 .section-title .vertical-line span i:before, .section-title-white .vertical-line span i:before {
   margin: 0;
   font-size: 65px;
   font-size: 3.61111rem;
-  color: #5e9a8e;
+  color: #A4313F;
   opacity: 0.6;
 }
 
@@ -514,7 +519,7 @@ a:focus {
 }
 
 .theme-btn {
-  background-color: #5e9a8e;
+  background-color: #A4313F;
   line-height: 0.66em;
   color: #fff;
   padding: 15px;
@@ -553,7 +558,7 @@ a:focus {
 .form input:focus,
 .form textarea:focus,
 .form select:focus {
-  border-color: #5e9a8e;
+  border-color: #A4313F;
   -webkit-box-shadow: 0 0 5px 0 #7cafa5;
   -moz-box-shadow: 0 0 5px 0 #7cafa5;
   -o-box-shadow: 0 0 5px 0 #7cafa5;
@@ -615,7 +620,7 @@ a:focus {
 }
 
 .social-links li a:hover {
-  background-color: #5e9a8e;
+  background-color: #A4313F;
 }
 
 .page-title {
@@ -694,7 +699,7 @@ a:focus {
 .page-title .breadcrumb ul li {
   font-size: 18px;
   font-size: 1rem;
-  color: #5e9a8e;
+  color: #A4313F;
   float: left;
   position: relative;
 }
@@ -762,7 +767,7 @@ a:focus {
   left: 0;
   top: 0;
   border: 5px solid #f1f1f1;
-  border-top: 5px solid #5e9a8e;
+  border-top: 5px solid #A4313F;
   border-radius: 50%;
   -webkit-animation: rotating 1s linear infinite;
   animation: rotating 1s linear infinite;
@@ -782,7 +787,7 @@ a:focus {
 .preloader .icon i:before {
   font-size: 55px;
   font-size: 3.05556rem;
-  color: #5e9a8e;
+  color: #A4313F;
 }
 
 @-webkit-keyframes rotating {
@@ -919,11 +924,11 @@ a:focus {
 }
 
 .blog-sidebar .categories-widget ul li a:hover:before {
-  color: #5e9a8e;
+  color: #A4313F;
 }
 
 .blog-sidebar .categories-widget ul li a:hover {
-  color: #5e9a8e;
+  color: #A4313F;
 }
 
 .blog-sidebar .popular-posts-widget li {
@@ -939,7 +944,7 @@ a:focus {
   font-size: 16px;
   font-size: 0.88889rem;
   font-weight: 600;
-  color: #5e9a8e;
+  color: #A4313F;
   display: inline-block;
   margin-bottom: 5px;
 }
@@ -1002,9 +1007,9 @@ a:focus {
 }
 
 .blog-sidebar .populer-tags-widget ul li a:hover {
-  background-color: #5e9a8e;
+  background-color: #A4313F;
   color: #fff;
-  border-color: #5e9a8e;
+  border-color: #A4313F;
 }
 
 .blog-sidebar .populer-tags-widget ul li a:hover:before {
@@ -1031,7 +1036,7 @@ a:focus {
   text-align: center;
   color: #565656;
   border-radius: 0;
-  border: 1px solid #5e9a8e;
+  border: 1px solid #A4313F;
   padding: 0;
   margin: 2px;
   position: relative;
@@ -1068,7 +1073,7 @@ a:focus {
 .page-pagination .pagination li a:hover,
 .page-pagination .pagination li a:focus,
 .page-pagination .pagination li.current a {
-  background-color: #5e9a8e;
+  background-color: #A4313F;
   color: #fff;
 }
 
@@ -1107,7 +1112,7 @@ a:focus {
 
 .site-header #navbar > ul li a:hover {
   text-decoration: none;
-  color: #5e9a8e;
+  color: #A4313F;
 }
 
 @media screen and (min-width: 992px) {
@@ -1124,7 +1129,7 @@ a:focus {
   .site-header #navbar > ul .sub-menu {
     background-color: #fff;
     width: 220px;
-    border-top: 2px solid #5e9a8e;
+    border-top: 2px solid #A4313F;
     position: absolute;
     left: 0;
     top: 130%;
@@ -1227,7 +1232,7 @@ a:focus {
   .site-header #navbar .half-mega-menu {
     background-color: #fff;
     padding: 20px;
-    border-top: 2px solid #5e9a8e;
+    border-top: 2px solid #A4313F;
     position: absolute;
     right: 0;
     top: 120%;
@@ -1327,7 +1332,7 @@ a:focus {
     width: 100%;
   }
   .site-header .navbar-header button {
-    background-color: #5e9a8e;
+    background-color: #A4313F;
     width: 40px;
     height: 35px;
     border: 0;
@@ -1371,14 +1376,14 @@ a:focus {
   }
   .site-header #navbar ul a:hover,
   .site-header #navbar ul li.current a {
-    color: #5e9a8e;
+    color: #A4313F;
   }
   .site-header #navbar .navbar-nav {
     height: 100%;
     overflow: auto;
   }
   .site-header #navbar .close-navbar {
-    background-color: #5e9a8e;
+    background-color: #A4313F;
     width: 35px;
     height: 35px;
     color: #fff;
@@ -1478,7 +1483,7 @@ a:focus {
 }
 
 .header-style-1 .couple-logo a, .header-style-2 .couple-logo a {
-  color: #5e9a8e;
+  color: #A4313F;
 }
 
 .header-style-1 .navigation, .header-style-2 .navigation {
@@ -1503,7 +1508,7 @@ a:focus {
 .header-style-1 #navbar ul li.current-menu-item > a, .header-style-2 #navbar ul li.current-menu-item > a,
 .header-style-1 #navbar ul > li.current-menu-ancestor li.current-menu-item > a, .header-style-2 #navbar ul > li.current-menu-ancestor li.current-menu-item > a,
 .header-style-1 #navbar ul > li.current-menu-ancestor > a, .header-style-2 #navbar ul > li.current-menu-ancestor > a {
-  color: #5e9a8e;
+  color: #A4313F;
 }
 
 @media screen and (min-width: 992px) {
@@ -1526,7 +1531,7 @@ a:focus {
     padding: 10px 15px;
   }
   .header-style-1 #navbar > ul > li .sub-menu a:hover, .header-style-2 #navbar > ul > li .sub-menu a:hover {
-    color: #5e9a8e;
+    color: #A4313F;
   }
   .header-style-1 #navbar > ul > li:last-child > ul, .header-style-2 #navbar > ul > li:last-child > ul {
     left: auto;
@@ -1646,8 +1651,8 @@ a:focus {
 .hero .slick-prev:hover,
 .hero .slick-next:hover {
   background-color: rgba(94, 154, 142, 0.8);
-  -webkit-box-shadow: 0 0 0 5px #5e9a8e;
-  box-shadow: 0 0 0 5px #5e9a8e;
+  -webkit-box-shadow: 0 0 0 5px #A4313F;
+  box-shadow: 0 0 0 5px #A4313F;
 }
 
 @media (max-width: 1199px) {
@@ -1732,7 +1737,8 @@ a:focus {
 
 .hero .wedding-announcement .couple-name-merried-text {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: bottom;
+  padding-bottom: 2rem;
 }
 
 .hero .wedding-announcement .couple-name-merried-text h2 {
@@ -1815,38 +1821,30 @@ a:focus {
 }
 
 .hero .wedding-announcement .save-the-date {
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   position: absolute;
-  left: 50%;
-  bottom: -350px;
-  -webkit-transform: translateX(-50%);
+  right: 0%;
+  /* -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
+  transform: translateX(-50%); */
   opacity: 0;
-  -webkit-transition: 1s 2.3s ease-in-out;
-  -o-transition: 1s 2.3s ease-in-out;
-  transition: 1s 2.3s ease-in-out;
+  margin: 1rem;
 }
 
 @media (max-width: 1199px) {
   .hero .wedding-announcement .save-the-date {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
   }
 }
 
 @media (max-width: 991px) {
   .hero .wedding-announcement .save-the-date {
-    width: 270px;
-    height: 270px;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -1862,7 +1860,8 @@ a:focus {
 }
 
 .hero .wedding-announcement .save-the-date:before {
-  background-color: rgba(94, 154, 142, 0.3);
+  background-color: #5B1920;
+  opacity: 0.3;
   width: 110%;
   height: 110%;
   left: -5%;
@@ -1873,15 +1872,15 @@ a:focus {
 
 @media (max-width: 1199px) {
   .hero .wedding-announcement .save-the-date:before {
-    width: 108%;
-    height: 108%;
-    left: -4%;
-    top: -4%;
+    width: 114%;
+    height: 114%;
+    left: -7%;
+    top: -7%;
   }
 }
 
 .hero .wedding-announcement .save-the-date:after {
-  background-color: rgba(94, 154, 142, 0.7);
+  background-color: #A4313F;
   width: 100%;
   height: 100%;
   left: 0;
@@ -1893,7 +1892,7 @@ a:focus {
   font-size: 40px;
   font-size: 2.22222rem;
   color: #fff;
-  margin: 55px 0 0.2em;
+  margin: 94px 0 0.2em;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
@@ -1901,14 +1900,14 @@ a:focus {
   .hero .wedding-announcement .save-the-date h4 {
     font-size: 35px;
     font-size: 1.94444rem;
-    margin: 45px 0 0.15em;
+    margin: 70px 0 0.15em;
   }
 }
 
 @media (max-width: 991px) {
   .hero .wedding-announcement .save-the-date h4 {
     font-size: 28px;
-    font-size: 1.55556rem;
+    font-size: 1.1rem;
     margin: 30px 0 0.15em;
   }
 }
@@ -1935,20 +1934,19 @@ a:focus {
 }
 
 .hero .wedding-announcement .popup-save-the-date {
-  bottom: -185px;
   opacity: 1;
   z-index: 50;
 }
 
 @media (max-width: 1199px) {
   .hero .wedding-announcement .popup-save-the-date {
-    bottom: -180px;
+    /* bottom: -180px; */
   }
 }
 
 @media (max-width: 991px) {
   .hero .wedding-announcement .popup-save-the-date {
-    bottom: -170px;
+    /* bottom: -170px; */
   }
 }
 
@@ -2011,7 +2009,7 @@ a:focus {
 #0.5	footer
 --------------------------------------------------------------*/
 .site-footer {
-  background: url("../images/footer-bg.jpg") center center/cover no-repeat local;
+  background: url("../images/forever-always.jpg") center center/cover no-repeat local;
   text-align: center;
   color: #fff;
   padding: 160px 0;
@@ -2349,7 +2347,7 @@ a:focus {
 }
 
 .wedding-couple-section .details .social-links a:hover {
-  background-color: #5e9a8e;
+  background-color: #A4313F;
 }
 
 @media screen and (min-width: 992px) {
@@ -2455,7 +2453,7 @@ a:focus {
 }
 
 .count-down-section #clock {
-  color: #5e9a8e;
+  color: #A4313F;
   overflow: hidden;
 }
 
@@ -2674,7 +2672,7 @@ a:focus {
   font-size: 22px;
   font-size: 1.22222rem;
   font-weight: 600;
-  color: #5e9a8e;
+  color: #A4313F;
   margin: 0 0 0.5em;
   text-transform: uppercase;
 }
@@ -2734,7 +2732,7 @@ a:focus {
 }
 
 .story-section .video-holder .video-play-btn i {
-  color: #5e9a8e;
+  color: #A4313F;
 }
 
 .story-section .story-timeline .story-slider .owl-controls {
@@ -2892,7 +2890,7 @@ a:focus {
 }
 
 .events-section .event ul li i {
-  color: #5e9a8e;
+  color: #A4313F;
   position: absolute;
   left: 0;
   top: 3px;
@@ -2904,7 +2902,7 @@ a:focus {
 
 .events-section .event .see-location-btn {
   font-weight: 600;
-  color: #5e9a8e;
+  color: #A4313F;
   display: inline-block;
   margin-top: 5px;
 }
@@ -2959,7 +2957,7 @@ a:focus {
 }
 
 .inportant-people-section .tablist ul .active a {
-  background-color: #5e9a8e;
+  background-color: #A4313F;
   color: #fff;
 }
 
@@ -3141,7 +3139,7 @@ a:focus {
 
 .inportant-people-section .grid .social-links li a:hover {
   background-color: transparent;
-  color: #5e9a8e;
+  color: #A4313F;
 }
 
 /*--------------------------------------------------------------
@@ -3189,7 +3187,7 @@ a:focus {
 }
 
 .gallery-section .gallery-filters ul .current {
-  color: #5e9a8e;
+  color: #A4313F;
 }
 
 .gallery-section .masonry-gallery {
@@ -3300,7 +3298,7 @@ a:focus {
 }
 
 .gallery-section .video-play-btn:hover i {
-  background: #5e9a8e;
+  background: #A4313F;
 }
 
 /*--------------------------------------------------------------
@@ -3406,7 +3404,7 @@ a:focus {
 }
 
 .rsvp-section .form .submit-btn button {
-  background-color: #5e9a8e;
+  background-color: #A4313F;
   height: 45px;
   line-height: 45px;
   font-size: 16px;
@@ -3450,7 +3448,7 @@ a:focus {
 #1.4	getting-there-section
 --------------------------------------------------------------*/
 .getting-there-section {
-  background-color: #5e9a8e;
+  background-color: #A4313F;
 }
 
 .getting-there-section .content h3,
@@ -3577,7 +3575,7 @@ a:focus {
 }
 
 .blog-main .entry-date span {
-  background-color: #5e9a8e;
+  background-color: #A4313F;
   font-size: 12px;
   font-size: 0.66667rem;
   color: #fff;
@@ -3622,7 +3620,7 @@ a:focus {
 .blog-main .entry-meta i {
   font-size: 16px;
   font-size: 0.88889rem;
-  color: #5e9a8e;
+  color: #A4313F;
 }
 
 @media (max-width: 767px) {
@@ -3659,7 +3657,7 @@ a:focus {
 }
 
 .blog-main .entry-title a:hover {
-  color: #5e9a8e;
+  color: #A4313F;
   text-decoration: none;
 }
 
@@ -3798,8 +3796,8 @@ a:focus {
 }
 
 .blog-details-content .tag-social-share .tag a:hover {
-  background-color: #5e9a8e;
-  border-color: #5e9a8e;
+  background-color: #A4313F;
+  border-color: #A4313F;
   color: #fff;
 }
 
@@ -3851,8 +3849,8 @@ a:focus {
 }
 
 .blog-details-content .tag-social-share .social-share .social-links a:hover {
-  background-color: #5e9a8e;
-  border-color: #5e9a8e;
+  background-color: #A4313F;
+  border-color: #A4313F;
   color: #fff;
 }
 
@@ -3992,7 +3990,7 @@ a:focus {
   font-size: 16px;
   font-size: 0.88889rem;
   font-weight: 600;
-  color: #5e9a8e;
+  color: #A4313F;
 }
 
 .blog-details-content .comments-area .review a:hover {
