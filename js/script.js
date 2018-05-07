@@ -501,8 +501,9 @@
             items: 3,
             dots: false,
             autoplay: true,
-            autoplayTimeout: 3000,
-            smartSpeed: 1000,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true,
+            smartSpeed: 500,
             loop: true,
             margin: 20,
             stagePadding: 10,
@@ -741,6 +742,15 @@
         $.data(this, 'resizeTimer', setTimeout(function() {
             smallNavFunctionality();
         }, 200));
+    });
+    
+
+    /*==========================================================================
+        REDIRECTION FOR GIFT REGISTRIES
+    ==========================================================================*/
+    $(".register").click(function(evt){
+        var redirectURL = evt.currentTarget.getAttribute('data-redirecturl');
+        window.open(redirectURL, '_blank');
     });
 
 

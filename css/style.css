@@ -3537,6 +3537,7 @@ a:focus {
 .gift-registration-section .gif-registration-slider .register {
   border: 1px solid #111;
   padding: 20px;
+  cursor: pointer;
 }
 
 .gift-registration-section .gif-registration-slider .register img {
