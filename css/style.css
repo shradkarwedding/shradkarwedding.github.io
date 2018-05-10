@@ -754,8 +754,8 @@ a:focus {
 
 .preloader .icon {
   display: block;
-  width: 90px;
-  height: 90px;
+  width: 2rem;
+  height: 2rem;
   position: relative;
 }
 
@@ -791,9 +791,9 @@ a:focus {
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 5rem;
-  -webkit-animation: pace-3d-spinner linear infinite 2s;
-  animation: pace-3d-spinner linear infinite 2s;
+  width: 2rem;
+  -webkit-animation: pace-3d-spinner linear infinite 3s;
+  animation: pace-3d-spinner linear infinite 3s;
   transform-style: preserve-3d;
 }
 
@@ -3501,7 +3501,11 @@ a:focus {
 .rsvp-section .form .success-error-message {
   margin-bottom: 0;
 }
-
+#thankyou_message h2 {
+  text-align: center;
+  color: #fff;
+  line-height: 3rem;
+}
 /*--------------------------------------------------------------
 #1.4	getting-there-section
 --------------------------------------------------------------*/
