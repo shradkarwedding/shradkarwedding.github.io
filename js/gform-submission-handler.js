@@ -63,6 +63,7 @@ function getFormData() {
 }
 
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
+  $("#loader").show();
   event.preventDefault();           // we are submitting via xhr below
   var data = getFormData();         // get the values submitted in the form
 
@@ -87,6 +88,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     xhr.onreadystatechange = function() {
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
+        $("#loader").hide();
         $("#gform").slideUp(500);
         $("#thankyou_message").slideDown(1000);
         return;
