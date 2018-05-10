@@ -504,36 +504,58 @@
     contactform.setAttribute('action', '//formspree.io/' + 'your' + '@' + 'email' + '.' + 'com');
 </script> -->
 
+ <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/style.css">
 
                 <div class="row content">
                     <div class="col col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <form action="https://formspree.io/shradkar0705@gmail.com" id="rsvp-form" class="form validate-rsvp-form row" method="post" novalidate="novalidate">
+                     <!--   <form action="https://formspree.io/shradkar0705@gmail.com" id="rsvp-form" class="form validate-rsvp-form row" method="post" novalidate="novalidate"> -->
+
+ <form id="gform" method = "POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+ action= "https://script.google.com/macros/s/AKfycbySqEIH9QABhVwarSlD52tiHMKiIPaor2WjkCr6QQ/exec">
+
+   
                             <div class="col col-sm-12">
                                 <input type="text" name="name" class="form-control" placeholder="Your Name*">
                             </div>
+                                
                             <div class="col col-sm-6">
                                 <input type="email" name="email" class="form-control" placeholder="Your Email*">
                             </div>
+                              
                             <div class="col col-sm-6">
                                 <input type="text" name="guest" class="form-control" placeholder="Number Of Guests*">
                             </div>
+                             
                             <div class="col col-sm-12">
                                 <textarea class="form-control" name="notes" placeholder="Your Message*"></textarea>
                             </div>
-                            <div class="col col-sm-12 submit-btn">
+
+                             <button class="button-success pure-button button-xlarge">
+                             <button type="submit" class="submit">RSVP</button>
+      <i class="fa fa-paper-plane"></i>&nbsp;RSVP</button>
+                         <!--    <div class="col col-sm-12 submit-btn">
                                 <button type="submit" class="submit">RSVP</button>
                                 <span id="loader"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></span>
-                            </div>
-                            <div class="col col-md-12 success-error-message">
+                            </div>      -->
+
+                              <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for your RSVP!
+      We look forward to celebrate with you!</h2>
+  </div>
+                        <!--    <div class="col col-md-12 success-error-message">
                                 <div id="success">Thank you</div>
-                                <div id="error"> Error occurred while sending email. Please try again later. </div>
-                            </div>
+                                <div id="error"> Error occurred while sending email. Please try again later. </div> 
+                            </div> -->
                         </form>
                     </div>
                 </div> 
             </div> <!-- end container -->
         </section>
         <!-- end rsvp-section -->
+
+
+
+
 
 
         <!-- start getting-there-section -->
@@ -704,6 +726,10 @@
     ================================================== -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+      <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
 
     <!-- Plugins for this template -->
     <script src="./js/jquery-plugin-collection.js"></script>
