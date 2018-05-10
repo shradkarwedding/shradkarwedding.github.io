@@ -551,30 +551,30 @@
                 events: "Select your event list"
             },
 
-            // submitHandler: function (form) {
-            //     $("#loader").css("display", "inline-block");
-            //     $.ajax({
-            //         type: "POST",
-            //         url: "mail.php",
-            //         data: $(form).serialize(),
-            //         success: function () {
-            //             $( "#loader").hide();
-            //             $( "#success").slideDown( "slow" );
-            //             setTimeout(function() {
-            //             $( "#success").slideUp( "slow" );
-            //             }, 3000);
-            //             form.reset();
-            //         },
-            //         error: function() {
-            //             $( "#loader").hide();
-            //             $( "#error").slideDown( "slow" );
-            //             setTimeout(function() {
-            //             $( "#error").slideUp( "slow" );
-            //             }, 3000);
-            //         }
-            //     });
-            //     return false; // required to block normal submit since you used ajax
-            // }
+            submitHandler: function (form) {
+                $("#loader").css("display", "inline-block");
+                $.ajax({
+                    type: "POST",
+                    url: form.action,
+                    data: $(form).serialize(),
+                    success: function () {
+                        $( "#loader").hide();
+                        $( "#thankyou_message").slideDown( "slow" );
+                        setTimeout(function() {
+                        $( "#thankyou_message").slideUp( "slow" );
+                        }, 3000);
+                        form.reset();
+                    },
+                    error: function() {
+                        $( "#loader").hide();
+                        $( "#error_message").slideDown( "slow" );
+                        setTimeout(function() {
+                        $( "#error_message").slideUp( "slow" );
+                        }, 3000);
+                    }
+                });
+                return false; // required to block normal submit since you used ajax
+            }
 
         });
     }
