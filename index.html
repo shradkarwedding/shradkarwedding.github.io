@@ -479,7 +479,7 @@
         <section class="rsvp-section section-padding parallax" data-bg-image="./images/join-the-party-bg.jpg" data-speed="7" id="rsvp" style="background-image: url(&quot;./images/join-the-party-bg.jpg&quot;); background-position: 50% -1167.49px; background-size: cover;">
             <div class="container">
                 <div class="row">
-                    <div class="col col-xs-12">
+                    <div class="col col-xs-70">
                         <div class="section-title-white">
                             <div class="vertical-line"><span><i class="fi flaticon-two"></i></span></div>
                             <h2>Join our party</h2>
@@ -488,10 +488,13 @@
                 </div> <!-- end section-title -->
 
                 <div class="row content">
-                    <div class="col col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="col col-lg-8 col-lg-offset-4 col-md-z col-md-offset-1">
 
-                        <form id="rsvp-form" method = "POST" class="form validate-rsvp-form row pure-form pure-form-stacked" data-email="example@email.net" action= "https://script.google.com/macros/s/AKfycbySqEIH9QABhVwarSlD52tiHMKiIPaor2WjkCr6QQ/exec">
-    
+
+   <form id="gform" method = "POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+ action= "https://script.google.com/macros/s/AKfycbySqEIH9QABhVwarSlD52tiHMKiIPaor2WjkCr6QQ/exec">
+    <!-- change the form action to your script url -->
+
                             <div class="col col-sm-12">
                                 <input type="text" name="name" class="form-control" placeholder="Your Name*">
                             </div>
@@ -508,9 +511,14 @@
                                 <textarea class="form-control" name="notes" placeholder="Your Message*"></textarea>
                             </div>
 
-                            <div class="col col-sm-12 submit-btn">
-                                <button id="rsvp-submitbtn" class="submit">RSVP</button>
-                                <span id="loader"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></span>
+      <div class="col col-sm-12 submit-btn">
+                                <button id="rsvp-submitbtn" type="submit" class="submit">&nbsp;RSVP</button>
+                              
+                            </div>
+
+                            
+
+                            <!--    <span id="loader"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></span> -->
                             </div>
                         </form>
                         <div class="col col-md-12 success-error-message">
@@ -655,18 +663,7 @@
                                     </div>
                         </div>
                     </div>
-                        <!-- <div class="row">
-                            <div class="col-md-6 text-center">
-                                <a href="https://www.williams-sonoma.com/registry/nzqt6b8n8x/registry-list.html?">
-                                    <img src="./images/williamssonoma_logo.png" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <a href="https://www.zola.com/registry/shradkar">
-                                    <img src="./images/zola-logo-blue.png" alt="">
-                                </a>
-                            </div>
-                        </div> -->
+                    
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
@@ -701,16 +698,14 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 
-<<<<<<< HEAD
+
   <!-- Submit the Form to Google Using "AJAX" -->
-      <script data-cfasync="false" type="text/javascript"
-  src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js">
-      
-  </script>
-=======
+    <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
+
     <!-- Submit the Form to Google Using "AJAX" -->
-    <script data-cfasync="false" type="text/javascript" src="./js/gform-submission-handler.js"></script>
->>>>>>> deab8476111e33770048449562a2eee06dde7242
+   <!-- <script data-cfasync="false" type="text/javascript" src="./js/gform-submission-handler.js"></script> -->
+
 
     <!-- Plugins for this template -->
     <script src="./js/jquery-plugin-collection.js"></script>
