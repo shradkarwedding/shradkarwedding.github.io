@@ -98,4 +98,4 @@ function loaded() {
   var formsubmitbtn = document.getElementById("rsvp-submitbtn");
   formsubmitbtn.addEventListener("click", handleFormSubmit, false);
 };
-document.addEventListener("DOMContentLoaded", loaded, false);
+// document.addEventListener("DOMContentLoaded", loaded, false);
