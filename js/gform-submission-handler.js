@@ -1,3 +1,4 @@
+
 function validEmail(email) { // see:
   var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
   return re.test(email);
@@ -14,7 +15,7 @@ function validateHuman(honeypot) {
 
 // get all data in form and return object
 function getFormData() {
-  var form = document.getElementById("rsvp-form");
+  var form = document.getElementById("gform");
   var elements = form.elements; // all form elements
   var fields = Object.keys(elements).filter(function(k) {
         // the filtering logic is simple, only keep fields that are not the honeypot
@@ -62,8 +63,15 @@ function getFormData() {
 }
 
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
+  $("#loader").show();
   event.preventDefault();           // we are submitting via xhr below
   var data = getFormData();         // get the values submitted in the form
+
+  /* OPTION: Remove this comment to enable SPAM prevention, see README.md
+  if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
+    return false;
+  }
+  */
 
   if( data.email && !validEmail(data.email) ) {   // if email is not valid show error
     var invalidEmail = document.getElementById("email-invalid");
@@ -72,17 +80,17 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
       return false;
     }
   } else {
-    var url = event.target.action;
+    var url = event.target.action;  //
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
     // xhr.withCredentials = true;
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function() {
-        document.getElementById("rsvp-form").style.display = "none"; // hide form
-        var thankYouMessage = document.getElementById("thankyou_message");
-        if (thankYouMessage) {
-          thankYouMessage.style.display = "block";
-        }
+        console.log( xhr.status, xhr.statusText )
+        console.log(xhr.responseText);
+        $("#loader").hide();
+        $("#gform").slideUp(500);
+        $("#thankyou_message").slideDown(1000);
         return;
     };
     // url encode form data for sending as post data
@@ -95,7 +103,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
 function loaded() {
   console.log("Contact form submission handler loaded successfully.");
   // bind to the submit event of our form
-  var formsubmitbtn = document.getElementById("rsvp-submitbtn");
-  formsubmitbtn.addEventListener("click", handleFormSubmit, false);
+  var form = document.getElementById("gform");
+  form.addEventListener("submit", handleFormSubmit, false);
 };
-// document.addEventListener("DOMContentLoaded", loaded, false);
+document.addEventListener("DOMContentLoaded", loaded, false);

@@ -488,10 +488,10 @@
                 </div> <!-- end section-title -->
 
                 <div class="row content">
-                    <div class="col col-lg-8 col-lg-offset-4 col-md-z col-md-offset-1">
+                    <div class="col col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
 
-   <form id="gform" method = "POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+   <form id="gform" method = "POST" class="form validate-rsvp-form pure-form pure-form-stacked" data-email="example@email.net"
  action= "https://script.google.com/macros/s/AKfycbySqEIH9QABhVwarSlD52tiHMKiIPaor2WjkCr6QQ/exec">
     <!-- change the form action to your script url -->
 
@@ -511,14 +511,9 @@
                                 <textarea class="form-control" name="notes" placeholder="Your Message*"></textarea>
                             </div>
 
-      <div class="col col-sm-12 submit-btn">
+                            <div class="col col-sm-12 submit-btn">
                                 <button id="rsvp-submitbtn" type="submit" class="submit">&nbsp;RSVP</button>
-                              
-                            </div>
-
-                            
-
-                            <!--    <span id="loader"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></span> -->
+                                <span id="loader"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i></span>
                             </div>
                         </form>
                         <div class="col col-md-12 success-error-message">
@@ -699,12 +694,8 @@
     <script src="./js/bootstrap.min.js"></script>
 
 
-  <!-- Submit the Form to Google Using "AJAX" -->
-    <script data-cfasync="false" type="text/javascript"
-  src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
-
     <!-- Submit the Form to Google Using "AJAX" -->
-   <!-- <script data-cfasync="false" type="text/javascript" src="./js/gform-submission-handler.js"></script> -->
+   <script data-cfasync="false" type="text/javascript" src="./js/gform-submission-handler.js"></script>
 
 
     <!-- Plugins for this template -->
