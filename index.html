@@ -702,17 +702,26 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 
-<!-- Hotjar Tracking Code for shradkarwedding.com -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:888733,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+<!--freshmarketer tracking -->
+
+ <script type='text/javascript'>
+(function() {
+    window.zarget=true;
+    var protocol = ('https:' == document.location.protocol ? 'https:' : 'http:');
+    var scriptTag = document.createElement('script');
+    scriptTag.type = 'text/javascript';
+    scriptTag.async = true;
+    scriptTag.src = protocol +'//cdn.freshmarketer.com/234127/810986.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(scriptTag, s);
+})();
+function zargetTimeout() {
+    window.zarget = false;
+}
+window.zargetTimer = setTimeout(zargetTimeout, 3000);
 </script>
+
+
 
 
     <!-- Submit the Form to Google Using "AJAX" -->
